@@ -1,5 +1,6 @@
 use clap::Parser;
 mod runner;
+mod client;
 
 #[derive(Parser, Debug)]
 #[command(version, about, long_about = None)]

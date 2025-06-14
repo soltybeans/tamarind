@@ -1,3 +1,3 @@
 [workspace]
 resolver = "3"
-members = ["load_generator", "result_parser"]
+members = [ "load_generator", "result_parser"]

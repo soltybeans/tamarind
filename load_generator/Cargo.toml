@@ -6,4 +6,6 @@ edition = "2024"
 [dependencies]
 clap = { version = "4.5.x", features = ["derive"] }
 tokio = { version = "1", features = ["full"] }
-rand = { version = "0.9.1", fefatures = ["full"] }
+hyper = { version = "1.6", features = ["client", "http2"] }
+hyper-util = { version = "0.1.13", features = ["full"] }
+http-body-util = "0.1.3"

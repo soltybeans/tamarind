@@ -19,5 +19,4 @@ async fn main() {
     println!("RPS: {:?}", input.rps);
 
     runner::start_test(input.duration, input.rps).await;
-       
 }

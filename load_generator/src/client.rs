@@ -18,8 +18,7 @@ pub async fn make_request(uri: String, client: Client<HttpConnector, Full<Bytes>
     let (_, body) = response.into_parts();
 
     let _ = body.collect().await.unwrap();
-    let elapsed_time_millis = start_time.elapsed().as_millis();
-    println!("Elapsed time: {}ms", elapsed_time_millis)
+    let _elapsed_time_millis = start_time.elapsed().as_millis();
 }
 
 pub async fn make_client() -> Client<HttpConnector, Full<Bytes>> {
